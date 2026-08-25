@@ -15,4 +15,8 @@ Projekt obejmuje transport ciężki, najem taxi oraz samochody kontenerowe z win
 
 Otwórz `index.html` w przeglądarce. Pełny przykład Excel znajduje się w katalogu `assets`.
 
+## Działająca prezentacja
+
+[Otwórz TransportFlow 360](https://lukaszst-cz.github.io/transportflow-360/)
+
 Projekt jest częścią głównego [portfolio operacyjnego](https://github.com/lukaszst-cz/operations-office-portfolio).
