@@ -1,22 +1,33 @@
 # TransportFlow 360
 
-Demonstracyjny model procesu transportowego: od zapytania ofertowego i kalkulacji stawki po realizację przewozu, dokumenty, fakturę oraz płatność.
+**Problem:** w transporcie informacje o zapytaniu, wycenie, aucie, dokumentach i płatności łatwo rozchodzą się między telefonem, Excelem i wiadomościami.
 
-## W środku
+**Rozwiązanie:** demonstracja jednego procesu od zapytania ofertowego i kalkulacji stawki do realizacji przewozu, dokumentów, faktury oraz płatności.
 
-- strona prezentacyjna i portal PWA,
-- kalkulator oraz widoki floty, dokumentów i procesu,
-- skoroszyt `assets/TransportFlow_360_demo.xlsx`,
-- materiały kontroli jakości i dane wyłącznie demonstracyjne.
+[Otwórz działające demo](https://lukaszst-cz.github.io/transportflow-360/)
 
-Projekt obejmuje transport ciężki, najem taxi oraz samochody kontenerowe z windą. Dane, trasy, kwoty i identyfikatory są syntetyczne.
+## Co działa
 
-## Jak zobaczyć projekt
+- portal PWA z przebiegiem zlecenia;
+- kalkulator, widok floty i kontrola dokumentów;
+- skoroszyt `TransportFlow_360_demo.xlsx`;
+- materiały kontroli jakości i dane demonstracyjne.
 
-Otwórz `index.html` w przeglądarce. Pełny przykład Excel znajduje się w katalogu `assets`.
+## Wartość biznesowa
 
-## Działająca prezentacja
+- mniej ręcznego przepisywania danych między etapami;
+- szybsza wycena i kompletowanie wymaganych informacji;
+- prostsza kontrola marży, terminów oraz dokumentów;
+- jeden, czytelny punkt odniesienia dla dyspozytora i właściciela.
 
-[Otwórz TransportFlow 360](https://lukaszst-cz.github.io/transportflow-360/)
+## Dla kogo
 
-Projekt jest częścią głównego [portfolio operacyjnego](https://github.com/lukaszst-cz/operations-office-portfolio).
+Dla firm transportowych, spedycyjnych i usług z własną flotą.
+
+## Ważne
+
+Trasy, kwoty, identyfikatory i dane operacyjne są syntetyczne. Projekt to demonstracja procesu, nie gotowy system produkcyjny.
+
+## Uruchomienie
+
+Otwórz `index.html` w przeglądarce. Pełny przykład Excel znajduje się w `assets/`.
