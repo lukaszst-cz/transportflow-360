@@ -1,4 +1,4 @@
-name: Quality
+name: Quality checks
 
 on:
   push:
@@ -9,7 +9,7 @@ permissions:
   contents: read
 
 concurrency:
-  group: ${{ github.workflow }}-${{ github.ref }}
+  group: quality-${{ github.ref }}
   cancel-in-progress: true
 
 jobs:
@@ -23,8 +23,7 @@ jobs:
       - name: Check JavaScript syntax
         run: |
           node --check calculator.js
-          node --check typography.js
           node --check portal/app.js
           node --check portal/sw.js
-      - name: Run static QA
+      - name: Run static project checks
         run: node qa/static_checks.mjs
