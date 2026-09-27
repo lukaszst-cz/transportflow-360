@@ -15,6 +15,13 @@
 
 Uzupełniający backend demonstracyjny Python + SQLite: https://github.com/lukaszst-cz/transportflow-control-center
 
+## Architektura demonstracji
+
+- **TransportFlow 360** — publiczny frontend procesu, portal PWA, kalkulator, case study i skoroszyt demonstracyjny;
+- **TransportFlow Control Center** — osobny backend demonstracyjny Python + SQLite z API i modelem danych;
+- dane publiczne są syntetyczne, a frontend portfolio nie zapisuje ich do zewnętrznej bazy;
+- część publiczna pokazuje przebieg procesu i role, a Control Center pokazuje warstwę aplikacyjną i dane.
+
 ## Co działa
 
 - portal PWA z przebiegiem zlecenia;
