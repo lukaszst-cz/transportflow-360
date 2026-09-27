@@ -6,6 +6,13 @@
 
 [Otwórz działające demo](https://lukaszst-cz.github.io/transportflow-360/)
 
+## Szybki podgląd
+
+- [Portal operacyjny](https://lukaszst-cz.github.io/transportflow-360/portal/)
+- [Widok właściciela / administratora](https://lukaszst-cz.github.io/transportflow-360/portal/?role=manager)
+- [Kalkulator stawki](https://lukaszst-cz.github.io/transportflow-360/kalkulator.html)
+- [Case study](https://lukaszst-cz.github.io/transportflow-360/case-study.html)
+
 Uzupełniający backend demonstracyjny Python + SQLite: https://github.com/lukaszst-cz/transportflow-control-center
 
 ## Co działa
@@ -30,6 +37,10 @@ Dla firm transportowych, spedycyjnych i usług z własną flotą.
 
 Trasy, kwoty, identyfikatory i dane operacyjne są syntetyczne. Projekt to demonstracja procesu, nie gotowy system produkcyjny.
 
+## Kontrola jakości
+
+Repozytorium sprawdza składnię JavaScript oraz kompletność kluczowych stron, ról, modułów i lokalnych odsyłaczy w GitHub Actions.
+
 ## Uruchomienie
 
-Otwórz `index.html` w przeglądarce. Pełny przykład Excel znajduje się w `assets/`.
+Otwórz `index.html` w przeglądarce. Pełny przykład Excel znajduje się w `assets/`. Portal PWA najlepiej testować przez działające demo HTTPS, ponieważ service worker wymaga bezpiecznego kontekstu.
