@@ -6,6 +6,8 @@
 
 [Otwórz działające demo](https://lukaszst-cz.github.io/transportflow-360/)
 
+Uzupełniający backend demonstracyjny Python + SQLite: https://github.com/lukaszst-cz/transportflow-control-center
+
 ## Co działa
 
 - portal PWA z przebiegiem zlecenia;
