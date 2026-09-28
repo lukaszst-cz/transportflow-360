@@ -17,17 +17,21 @@ Uzupełniający backend demonstracyjny Python + SQLite: https://github.com/lukas
 
 ## Architektura demonstracji
 
-- **TransportFlow 360** — publiczny frontend procesu, portal PWA, kalkulator, case study i skoroszyt demonstracyjny;
-- **TransportFlow Control Center** — osobny backend demonstracyjny Python + SQLite z API i modelem danych;
-- dane publiczne są syntetyczne, a frontend portfolio nie zapisuje ich do zewnętrznej bazy;
-- część publiczna pokazuje przebieg procesu i role, a Control Center pokazuje warstwę aplikacyjną i dane.
+Projekt rozwijany jest w trzech czytelnie rozdzielonych warstwach:
+
+- **TransportFlow 360 — publiczne demo 20/26**: frontend procesu, 9 widoków ról, portal PWA, kalkulator stawki, case study i skoroszyt demonstracyjny dla 20 zestawów oraz 26 kierowców;
+- **TransportFlow Python/SQLite — prototyp backendu 20/26**: osobne repozytorium z API, modelem danych SQLite i automatycznymi testami dla tego samego modelu operacyjnego;
+- **TransportFlow Control Center — rozszerzony model 50/58**: rozwijany w głównym portfolio wariant React/TypeScript/Cloudflare dla 50 zestawów i 58 kierowców, z CRM, dokumentami, finansami, rolami i KPI.
+
+Dane publiczne są syntetyczne. Warstwy demonstracyjne pokazują proces, architekturę i zakres odpowiedzialności użytkowników, ale nie zastępują produkcyjnego TMS z uwierzytelnianiem, RBAC i integracjami z systemami zewnętrznymi.
 
 ## Co działa
 
-- portal PWA z przebiegiem zlecenia;
-- kalkulator, widok floty i kontrola dokumentów;
+- portal PWA z 9 widokami ról i deep-linkami do wybranej roli;
+- przebieg zlecenia, kalkulator stawki, flota, dokumenty i KPI;
 - skoroszyt `TransportFlow_360_demo.xlsx`;
-- materiały kontroli jakości i dane demonstracyjne.
+- automatyczne QA w GitHub Actions: składnia JS, mobile, role, PWA, kalkulator i lokalne odsyłacze;
+- osobny backend Python/SQLite oraz rozszerzony Control Center jako kolejne etapy rozwoju koncepcji.
 
 ## Wartość biznesowa
 
