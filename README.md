@@ -1,8 +1,6 @@
 # TransportFlow 360
 
-**Problem:** w transporcie informacje o zapytaniu, wycenie, aucie, dokumentach i płatności łatwo rozchodzą się między telefonem, Excelem i wiadomościami.
-
-**Rozwiązanie:** demonstracja jednego procesu od zapytania ofertowego i kalkulacji stawki do realizacji przewozu, dokumentów, faktury oraz płatności.
+W transporcie część informacji zwykle żyje w Excelu, część w telefonie, a część w wiadomościach. TransportFlow 360 zbiera to w jeden prosty model: od wyceny i przydziału auta po dokumenty, realizację, dostawę i rozliczenie.
 
 [Otwórz działające demo](https://lukaszst-cz.github.io/transportflow-360/)
 
@@ -15,15 +13,13 @@
 
 Uzupełniający backend demonstracyjny Python + SQLite: https://github.com/lukaszst-cz/transportflow-control-center
 
-## Architektura demonstracji
+## Jak projekt jest podzielony
 
-Projekt rozwijany jest w trzech czytelnie rozdzielonych warstwach:
+- **TransportFlow 360** — publiczne demo dla 20 zestawów i 26 kierowców. Zawiera portal PWA, 9 widoków ról, kalkulator, case study i skoroszyt Excel.
+- **TransportFlow Python/SQLite** — prosty backend demo dla tej samej wersji 20/26, z API i testami.
+- **TransportFlow Control Center** — większa wersja w React/TypeScript/Cloudflare dla 50 zestawów i 58 kierowców, z CRM, dokumentami, finansami i KPI.
 
-- **TransportFlow 360 — publiczne demo 20/26**: frontend procesu, 9 widoków ról, portal PWA, kalkulator stawki, case study i skoroszyt demonstracyjny dla 20 zestawów oraz 26 kierowców;
-- **TransportFlow Python/SQLite — prototyp backendu 20/26**: osobne repozytorium z API, modelem danych SQLite i automatycznymi testami dla tego samego modelu operacyjnego;
-- **TransportFlow Control Center — rozszerzony model 50/58**: rozwijany w głównym portfolio wariant React/TypeScript/Cloudflare dla 50 zestawów i 58 kierowców, z CRM, dokumentami, finansami, rolami i KPI.
-
-Dane publiczne są syntetyczne. Warstwy demonstracyjne pokazują proces, architekturę i zakres odpowiedzialności użytkowników, ale nie zastępują produkcyjnego TMS z uwierzytelnianiem, RBAC i integracjami z systemami zewnętrznymi.
+Wszystkie dane są przykładowe. To demonstracja procesu i architektury, a nie gotowy TMS do pracy na danych firmowych.
 
 ## Co działa
 
@@ -33,12 +29,12 @@ Dane publiczne są syntetyczne. Warstwy demonstracyjne pokazują proces, archite
 - automatyczne QA w GitHub Actions: składnia JS, mobile, role, PWA, kalkulator i lokalne odsyłacze;
 - osobny backend Python/SQLite oraz rozszerzony Control Center jako kolejne etapy rozwoju koncepcji.
 
-## Wartość biznesowa
+## Po co ten projekt
 
-- mniej ręcznego przepisywania danych między etapami;
-- szybsza wycena i kompletowanie wymaganych informacji;
-- prostsza kontrola marży, terminów oraz dokumentów;
-- jeden, czytelny punkt odniesienia dla dyspozytora i właściciela.
+- mniej przepisywania tych samych danych w kilku miejscach;
+- prostsza wycena i kontrola kosztu zlecenia;
+- terminy i dokumenty w jednym miejscu;
+- wspólny widok dla dyspozytora i osoby zarządzającej.
 
 ## Dla kogo
 
