@@ -51,3 +51,13 @@ Repozytorium sprawdza składnię JavaScript oraz kompletność kluczowych stron,
 ## Uruchomienie
 
 Otwórz `index.html` w przeglądarce. Pełny przykład Excel znajduje się w `assets/`. Portal PWA najlepiej testować przez działające demo HTTPS, ponieważ service worker wymaga bezpiecznego kontekstu.
+
+---
+
+## ☕ Wsparcie / Support
+
+Jeśli ten projekt Ci się podoba lub jest dla Ciebie przydatny, możesz dobrowolnie wesprzeć jego dalszy rozwój.  
+If you like this project or find it useful, you can support its further development.
+
+**[☕ Postaw Naleśnikowi++ kawę / Buy Me a Coffee](https://buymeacoffee.com/nalesnik_plus_plus)**
+
